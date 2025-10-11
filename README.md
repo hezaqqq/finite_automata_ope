@@ -1,6 +1,6 @@
 
 # [Finite Automata Operations Project](https://github.com/timotheetacca/finite_automata_ope)
-> ###### 2025-L2 EFREI TACCA Timothée, TRAN Kim-Lan, LOESCH Thomas, OUDIN Julien, MOINDJIE Daïf
+> ###### 2025-L2 EFREI
 
 This project is designed to perform various operations on Finite Automata (FA), including reading, displaying, standardizing, determinizing, completing, minimizing, and testing word recognition
 ## Project Overview
@@ -96,6 +96,3 @@ fa.minimized_fa()
 # Create a complementary FA
 fa.complementary()
 ``` 
-## Feedback
-
-If you have any feedback, please reach out to us at timothee.tacca@efrei.net, kim-lan.tran@efrei.net,  julien.oudin@efrei.net ,thomas.loesch@efrei.net or daif.moindjie@efrei.net
