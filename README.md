@@ -1,5 +1,5 @@
 
-# [Finite Automata Operations Project](https://github.com/timotheetacca/finite_automata_ope)
+# [Finite Automata Operations Project](https://github.com/hezaqqq/finite_automata_ope)
 > ###### 2025-L2 EFREI
 
 This project is designed to perform various operations on Finite Automata (FA), including reading, displaying, standardizing, determinizing, completing, minimizing, and testing word recognition
@@ -27,15 +27,12 @@ The program is divided into several stages:
 You have 2 options to install our project. You can install the project using git clone :
 
 ```
-git clone https://github.com/timotheetacca/finite_automata_ope.git
+git clone https://github.com/hezaqqq/finite_automata_ope.git
 ```
 
 ### Install
 
 You can also directly install the latest release of our project from [here](https://github.com/timotheetacca/finite_automata_ope)
-
-![download_img](https://github.com/user-attachments/assets/a29cc643-5616-44cf-aa5c-f30e097818cb)
-
 
 ### Example FA File Format
 
