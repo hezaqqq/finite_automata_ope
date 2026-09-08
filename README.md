@@ -1,95 +1,119 @@
+# Finite Automata Operations Project
 
-# [Finite Automata Operations Project](https://github.com/hezaqqq/finite_automata_ope)
-> ###### 2025-L2 EFREI
+A Python program that provides various operations on Finite Automata, including reading, displaying, standardizing, determinizing, completing, minimizing, and testing word recognition.
 
-This project is designed to perform various operations on Finite Automata (FA), including reading, displaying, standardizing, determinizing, completing, minimizing, and testing word recognition
-## Project Overview
+## Description
 
-The program is divided into several stages:
+Finite Automata are mathematical models used to recognize and process formal languages.
 
-1. **Reading a FA**: The program reads a FA from a text file, stores it in memory, and displays it on the screen
-2. **Displaying FA Information**: The program checks if the FA is deterministic, deterministic and complete, or standard, and displays the results
-3. **Standardization**: If the FA is not standard, the program can standardize it on demand
-4. **Determinization and completion**: If the FA is not complete or deterministic, the program can convert it into an equivalent complete deterministic FA
-5. **Minimization**: The program can minimize a complete deterministic FA
-6. **Word Recognition**: The program can test if a given word is recognized by the FA
-7. **Complementary Language**: The program can create a complementary automaton of the given FA
+The goal of this project is to provide a Python program capable of performing several operations on Finite Automata, from reading an automaton from a file to transforming and minimizing it.
 
-## How to Use the Program
+The program reads a Finite Automaton from a text file, stores it in memory, and provides different functions to analyse and transform it.
 
-### Prerequisites
+The project supports the following operations: Read a Finite Automaton from a file, display information about a Finite Automaton, check if a Finite Automaton is deterministic, check if a Finite Automaton is complete, check if a Finite Automaton is standard, standardize a Finite Automaton, determinize and complete a Finite Automaton, minimize a complete deterministic Finite Automaton, rest whether a word is recognized by a Finite Automatonand create the complementary language of a Finite Automaton.
 
-- [Python 3.x](https://www.python.org/)
-- `csv` and `os` libraries *(included in Python standard library)*
 
-## Download
-### Git clone
-You have 2 options to install our project. You can install the project using git clone :
+## Getting Started
 
-```
+### Dependencies
+
+To run the project, you need:
+
+* **Python 3.x**
+* A terminal or command prompt
+* A Python development environment such as **Visual Studio Code**, **PyCharm**, or **IDLE** (optional)
+
+The project uses standard Python libraries such as `csv` and `os` and does not require external libraries.
+
+The project is designed to run on common operating systems such as Windows, Linux, and macOS, provided a compatible Python version is available.
+
+### Installing
+
+Clone the project:
+
+```bash
 git clone https://github.com/hezaqqq/finite_automata_ope.git
 ```
 
-### Install
+Then navigate to the project directory:
 
-You can also directly install the latest release of our project from [here](https://github.com/timotheetacca/finite_automata_ope)
-
-### Example FA File Format
-
-The text file representing an automaton should have the following structure:
-``` 
-2       
-5       
-1 0      
-1 4       
-6         
-0 a 1     
-0 a 0
-0 b 0
-1 b 2
-2 a 3
-3 a 4
+```bash
+cd finite_automata_ope
 ```
 
+Alternatively, you can download the project directly from the [GitHub repository](https://github.com/hezaqqq/finite_automata_ope).
 
-- **Line 1**: Number of symbols in the automaton's alphabet
-- **Line 2**: Number of states
-- **Line 3**: Number of initial states, followed by the initial states separeted by space
-- **Line 4**: Number of final states followed by the final states separeted by space
-- **Line 5**: Number of transitions
-- **Lines 6 and beyond**: Transitions in the form `<source state> <symbol> <target state>`
+Make sure that the Finite Automaton input files are located in the correct directory.
 
-### Results
-All the results of the FA tests are available in the `fa_result` file, in the following format:
-- Display information
-- Display the classic FA
-- Display the complete and determinized FA
-- Display the minimized FA
+### Executing program
 
-### Example Usage
+Run the project using Python:
 
-If you'd like to use the program's functions, here are a few examples
+```bash
+python main.py
+```
+
+If your system uses `python3`, use:
+
+```bash
+python3 main.py
+```
+
+Once the program starts, follow the instructions displayed by the program.
+
+1. Load a Finite Automaton from an input file.
+2. Display the information of the Finite Automaton.
+3. Check whether the Finite Automaton is deterministic, complete, or standard.
+4. Standardize the Finite Automaton if necessary.
+5. Determinize and complete the Finite Automaton.
+6. Minimize the complete deterministic Finite Automaton.
+7. Test word recognition.
+8. Create the complementary automaton if required.
+
+## Help
+
+### The program does not start
+
+Make sure that Python is correctly installed and accessible from the terminal.
+
+For Python, you can check your installation with:
+
+```bash
+python --version
+```
+
+If your system uses `python3`, try:
+
+```bash
+python3 --version
+```
+
+### The program cannot find the input file
+
+Make sure that the Finite Automaton input file is located in the correct directory and that the file path provided to the program is correct.
+
+### Testing individual functions
+
+The different Finite Automaton operations can be tested individually by importing the corresponding functions or class into a Python file.
+
+For example:
+
 ```python
-# Initialize the FA with a file path
 fa = finite_automata("fa_example.txt")
 
-# Read and display the FA
 fa.get_fa_information()
 fa.get_csv_from_fa("fa_output.csv")
 
-# Check if the FA is deterministic
 fa.is_deterministic(display=True)
 
-# Standardize the FA if it is not standard
 if not fa.is_standard():
     fa.standardization()
 
-# Determinize and complete the FA
 fa.determinization_and_completion("determinized_fa.csv")
 
-# Minimize the FA
 fa.minimized_fa()
 
-# Create a complementary FA
 fa.complementary()
-``` 
+```
+
+The results of the Finite Automaton tests are available in the `fa_result` file.
